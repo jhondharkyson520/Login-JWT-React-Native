@@ -1,6 +1,6 @@
-import { User } from "../entities/User";
+import { LoginResponseType } from "../../shared/utils/LoginResponseTypes";
 
 export interface AuthRepository {
-    login(email: string, password: string): Promise<User>;
+    login(email: string, password: string): Promise<LoginResponseType>;
     logout(): Promise<void>;
 }

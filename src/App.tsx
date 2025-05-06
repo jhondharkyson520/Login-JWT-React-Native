@@ -1,20 +1,10 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'react-native-gesture-handler';
+import { AppNavigator } from "./presentation/navigation/AppNavigator";
+import 'react-native-gesture-handler';
+import { enableScreens } from 'react-native-screens';
+
+enableScreens();
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Hello word</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+  return <AppNavigator/>
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
